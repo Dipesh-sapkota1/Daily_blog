@@ -1,0 +1,42 @@
+<%-include("./partials/header.ejs") %> 
+   <main class="container d-flex flex-column ">
+     <h1 class="text-center py-2">Create Your New Post</h1>
+      <form action="/<%=locals.id %> " method="POST" class=" row g-3 pt-3 pb-5">
+        <div class="col-md-6">
+          <label for="title" class="form-label">Title</label>
+          <input type="text" name="title" class="form-control" value="<%=locals.title %> ">
+        </div>
+        <div class="col-md-6">
+          <label for="subtitle" class="form-label">Subtitle</label>
+          <input type="text" name="subtitle" class="form-control" value="<%=locals.subtitle %>">
+        </div>
+        <div class="col-md-12">
+          <label for="description" class="form-label">Description</label><br>
+          <textarea type="text" name="description" class="form-control"><%=locals.description %></textarea>
+        </div>
+        <div class="col-md-12">
+          <label for="author" class="form-label">Author</label>
+          <input type="text" name="author" class="form-control" value="<%=locals.author %> ">
+        </div>
+        <div class="col-md-12">
+          <label for="category" class="form-label">Category</label>
+          <select  class="form-select" name="category">
+            <option value="UI">UI/UX</option>
+            <option value="IOT">IOT</option>
+            <option value="Framework">Frame-works</option>
+            <option value="Backend">Backend</option>
+            <option value="Cybersecurity">Cyber Security</option>
+            <option value="Business">Business</option>
+            <option value="Dataanalysis">Data Analysis</option>
+            <option value="Environment">Environment</option>
+            <option value="Ai">Artificial Intelligence</option>
+          </select>
+        </div>
+        <div class="input-group col-md-4 d-flex  gap-2">
+          <button class="btn btn-primary text-light " type="submit">Submit</button>
+        <a href="/" class="btn secondary text-light bg-danger">Cancel</a>
+        </div>
+      </form>
+</main> 
+<%-include("./partials/footer.ejs") %> 
+   

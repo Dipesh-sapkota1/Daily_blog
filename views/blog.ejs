@@ -1,0 +1,25 @@
+<%-include("./partials/header.ejs") %> 
+<main class="container">
+        
+   
+    <article class="blog-post text-center py-4 vh" data-id="<%=locals.id %> ">
+        <div class="d-flex items-center justify-content-center">
+            <h2 class="display-1 mb-1"><%=locals.title%></h2>
+            <span class=" dropdown">
+                <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item " href="/<%=locals.id %>">Edit</a></li>
+                  <li><a class="dropdown-item " id="delete" data-id="<%=locals.id %> " href="/">Delete</a></li>
+                </ul>
+            </span>
+        </div>
+        <h3 class="display-6 text-muted"><%=locals.subtitle%></h3>
+        <p class="text-muted">
+          <%=locals.date %> 
+          by <a class="link-offset-2 link-underline link-underline-opacity-0 text-muted" href="#"><%=locals.author %></a>
+        </p>
+        <p><%=locals.description%></p>
+      </article>     
+</main>
+<%-include("./partials/footer.ejs") %> 

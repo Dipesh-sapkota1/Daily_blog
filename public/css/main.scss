@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.UI{color: rebeccapurple;}
+.IOT{color: firebrick;}
+.Backend{color: teal;}
+.Frontend{color: darkgreen;}
+.Framework{color: #cd6133;}
+.Cybersecurity{color: #2c3e50;}
+.Business{color: #e67e22;}
+.Dataanalysis{color: #009432;}
+.Environment{color: #A3CB38;}
+.AI{color: #EA2027;}
+.bg-secondary{color:green}
+.bg-nav{background: #a34a00;}
+.bg-black{background: #000;}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Playfair Display", serif;
+}
+.vh{
+    min-height: 100vh;
+}
+.hero-bg{
+    background-image: url('../images/1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
